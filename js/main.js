@@ -75,9 +75,20 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
 
 // Form Submission
 document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you for your message! I will get back to you soon.');
-    this.reset();
+    // Formspree will handle the submission, so we don't need to prevent default
+    // You can add additional validation here if needed
+    
+    // Optional: Show a temporary loading state
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+    
+    // Revert after 3 seconds (in case the form submission fails)
+    setTimeout(() => {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }, 3000);
 });
 
 // Download CV Button - FIXED VERSION
@@ -136,3 +147,4 @@ window.addEventListener('click', (e) => {
         }
     });
 });
+
