@@ -80,10 +80,19 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     this.reset();
 });
 
-// Download CV Button
+// Download CV Button - FIXED VERSION
 document.getElementById('downloadCV').addEventListener('click', function(e) {
     e.preventDefault();
-    alert('CV download functionality would be implemented here. In a real application, this would download your CV file.');
+    
+    // Create a temporary anchor element
+    const link = document.createElement('a');
+    link.href = 'assets/resume.pdf';
+    link.download = 'YourName_Resume.pdf'; // You can customize the downloaded filename
+    
+    // Append to body, click, and remove
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 });
 
 // Project Modals
