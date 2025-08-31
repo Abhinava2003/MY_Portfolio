@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="assets/icons/icon-192.png">
+</head>
+<body>
+    <!-- Avatar Welcome Modal -->
+    <div class="avatar-modal" id="avatarModal">
+        <div class="avatar-container">
+            <div class="close-avatar" id="closeAvatar">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="avatar-image">
+                <img src="images/avatar.png" alt="Your Avatar">
+            </div>
+            <div class="speech-bubble" id="speechText">
+                Welcome to my portfolio! I'm excited to share my work with you.
+            </div>
+            <h3 class="avatar-name">Abhinava Chakraborty</h3>
+            <p>Computer Science & Engineering Student</p>
+            <button class="btn btn-primary" id="enterPortfolio" style="margin-top: 20px;">Enter Portfolio</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Abhinava(__Portfolio)<span>;</span></a>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <h1>Hello, I'm <span>Abhinava Chakraborty</span></h1>
+            <p>Computer Science & Engineering student specializing in AI, ML, Data Science, Frontend Development, UI/UX Design, and Cloud Computing.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>#About Me</h2>
+                <p>{Get to know me better}</p>
+            </div>
+            <div class="about-content">
+                <div class="about-img fade-in">
+                    <img src="images/about-img.jpg" alt="About Me">
+                </div>
+                <div class="about-text">
+                    <h3>Computer Science & Engineering Student</h3>
+                    <p>Hello! I'm a passionate Computer Science and Engineering student with a strong interest in Artificial Intelligence, Machine Learning, Data Science, Frontend Development, UI/UX Design, and Cloud Computing.</p>
+                    <p>My goal is to leverage cutting-edge technologies to create innovative solutions that solve real-world problems. I enjoy working on projects that challenge me and allow me to learn new skills.</p>
+                    <ul class="info-list">
+                        <li><i class="fas fa-user"></i><strong>Name:</strong> Abhinava Chakraborty</li>
+                        <li><i class="fas fa-envelope"></i><strong>Email:</strong> chakrabortyacabhinava12623@gmail.com</li>
+                        <li><i class="fas fa-calendar-alt"></i><strong>Age:</strong> 22</li>
+                        <li><i class="fas fa-map-marker-alt"></i><strong>Location:</strong> Kolaghat, West Bengal, India</li>
+                        <li><i class="fas fa-graduation-cap"></i><strong>Education:</strong> B.Tech in Computer Science & Engineering</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" id="downloadCV">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+                <p>Technologies and domains I specialize in</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-item fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Developing intelligent systems and predictive models using Python, TensorFlow, PyTorch, and scikit-learn.</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Science</h3>
+                    <p>Extracting insights from data using statistical analysis, data visualization, and machine learning techniques.</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Building responsive and interactive web applications using HTML, CSS, JavaScript, and modern frameworks.</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and visually appealing user interfaces with exceptional user experiences.</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Computing</h3>
+                    <p>Deploying and managing applications on cloud platforms like AWS, Azure, and Google Cloud.</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Management</h3>
+                    <p>Working with SQL and NoSQL databases to store, retrieve, and manipulate data efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+                <p>__Check out my recent work__(You,project):</p>
+            </div>
+            <div class="projects-container">
+                <div class="project-item fade-in">
+                    <div class="project-img">
+                        <img src="images/projects/project1.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Multi-Functional Calculator Web App</h3>
+                        <p>A responsive web application featuring basic, scientific, and unit conversion functionalities with an intuitive user interface for seamless user experience across devices.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <button class="btn btn-primary view-project" data-id="1">View Project</button>
+                    </div>
+                </div>
+                <div class="project-item fade-in">
+                    <div class="project-img">
+                        <img src="images/projects/project2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Voice Assistant</h3>
+                        <p>A Python-based voice assistant capable of performing speech recognition, executing commands, and automating basic tasks for efficient hands-free operations.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>SpeechRecognition</span>
+                            <span>pyttsx3</span>
+                        </div>
+                        <button class="btn btn-primary view-project" data-id="2">View Project</button>
+                    </div>
+                </div>
+                <div class="project-item fade-in">
+                    <div class="project-img">
+                        <img src="images/projects/project3.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Exploratory Data Analysis on Titanic Dataset</h3>
+                        <p>Analyzed Titanic dataset to identify survival trends and feature correlations using statistical techniques and data visualization tools.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                            <span>Seaborn</span>
+                            <span>Numpy</span>
+                        </div>
+                        <button class="btn btn-primary view-project" data-id="3">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Certificates</h2>
+                <p>Professional certifications and achievements</p>
+            </div>
+            <div class="certificates-container">
+                <div class="certificate-item fade-in">
+                    <div class="certificate-img">
+                        <img src="images/certificates/certificate1.jpg" alt="Certificate 1">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</h3>
+                        <p>Professional certification demonstrating expertise in optimizing deep learning models through hyperparameter tuning, regularization techniques, and advanced optimization strategies.</p>
+                        <button class="btn btn-primary view-certificate" data-id="1">View Certificate</button>
+                    </div>
+                </div>
+                <div class="certificate-item fade-in">
+                    <div class="certificate-img">
+                        <img src="images/certificates/certificate2.jpg" alt="Certificate 2">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Neural Networks and Deep Learning</h3>
+                        <p>Professional certification demonstrating expertise in building and training neural networks, implementing deep learning architectures, and understanding backpropagation and optimization techniques.</p>
+                        <button class="btn btn-primary view-certificate" data-id="2">View Certificate</button>
+                    </div>
+                </div>
+                <div class="certificate-item fade-in">
+                    <div class="certificate-img">
+                        <img src="images/certificates/certificate3.jpg" alt="Certificate 3">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Strategy and Game Theory for Management</h3>
+                        <p>Certificate demonstrating proficiency in applying strategic thinking and game theory concepts to managerial decision-making and competitive business environments.</p>
+                        <button class="btn btn-primary view-certificate" data-id="3">View Certificate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <p>Get in touch</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Kolaghat,West Bengal,India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>chakrabortyacabhinava12623@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+91-9932305951</p>
+                        </div>
+                    </div>
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Website</h4>
+                            <p>www.abhinavaportfoliio.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>Abhinava Chakraborty</h3>
+                    <p>A Computer Science & Engineering student passionate about AI, ML, Data Science, Frontend Development, UI/UX Design, and Cloud Computing.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/abhinava-chakraborty-89372232b/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Abhinava2003"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/share/19tya9RBXn/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_abhinava.chakraborty_/?next=%2F"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Abhinava Chakraborty. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modals -->
+    <div id="project-modal-1" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="images/projects/project1.jpg" alt="Project 1" class="modal-img">
+            <h3 class="modal-title">Multi-Functional Calculator Web App</h3>
+            <p class="modal-desc">
+                This project is a multi-functional calculator web application that provides basic arithmetic, scientific operations, and unit conversion capabilities within a single interface. The application was built using HTML, CSS for styling, and JavaScript for implementing the core logic and interactive functionalities.
+            </p>
+            <p class="modal-desc">
+                The calculator features a responsive design that adapts to various screen sizes, ensuring a seamless experience across devices. It includes functionalities such as trigonometric calculations, logarithmic operations, and real-time unit conversions. Additional features include error handling for invalid inputs and a clean, user-friendly interface designed for efficiency and ease of use.
+            <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-modal-2" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="images/projects/project2.jpg" alt="Project 2" class="modal-img">
+            <h3 class="modal-title">Voice Assistant</h3>
+            <p class="modal-desc">
+                This project is an intelligent voice assistant inspired by JARVIS, designed to recognize speech commands and execute a variety of tasks through voice interaction. The system was built using Python, integrating libraries such as SpeechRecognition for voice input, pyttsx3 for text-to-speech conversion, and additional APIs for performing actions like opening applications, searching the web, and providing system information.
+            </p>
+            <p class="modal-desc">
+                The assistant features hands-free operation and supports commands for sending emails, playing music, checking the time/date, and automating basic workflows. It is optimized for accurate voice recognition and smooth response generation, ensuring an interactive and efficient user experience. Future enhancements include integrating natural language understanding for conversational capabilities and adding IoT device control.
+            </p>
+            <div class="project-tags">
+                <span>Python</span>
+                <span>SpeechRecognition</span>
+                <span>pyttsx3</span>
+                <span>webbrowser</span>
+                <span>datetime</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-modal-3" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="images/projects/project3.jpg" alt="Project 3" class="modal-img">
+            <h3 class="modal-title">Exploratory Data Analysis on Titanic Dataset</h3>
+            <p class="modal-desc">
+                This project is an in-depth exploratory data analysis (EDA) of the Titanic dataset, aimed at uncovering survival trends and key feature correlations. The analysis was conducted using Python, leveraging Pandas for data manipulation, Matplotlib and Seaborn for advanced visualizations, and NumPy for numerical operations.
+            </p>
+            <p class="modal-desc">
+                The dataset consisted of over 1,300 passenger records, and the project focused on cleaning missing values, handling categorical variables, and generating insights into survival probabilities based on factors like age, gender, passenger class, and family size. The analysis revealed significant correlations and patterns that influenced survival rates. The project also includes visually appealing plots such as histograms, heatmaps, and bar charts for better interpretation of the findings.
+            </p>
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Matplotlib</span>
+                <span>Seaborn</span>
+                <span>Numpy</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Modals -->
+    <div id="certificate-modal-1" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="images/certificates/certificate1.jpg" alt="Certificate 1" class="modal-img">
+            <h3 class="modal-title">Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</h3>
+            <p class="modal-desc">
+                This professional certification demonstrates expertise in improving deep neural networks through advanced hyperparameter tuning, regularization methods, and optimization techniques. The certification validates the ability to enhance model accuracy, prevent overfitting, and accelerate training using state-of-the-art practices in deep learning.
+            </p>
+            <p class="modal-desc">
+                Demonstrates expertise in optimizing deep neural networks through hyperparameter tuning, regularization, and advanced optimization techniques, with a strong focus on improving accuracy, preventing overfitting, and applying deep learning best practices.
+            </p>
+            <p class="modal-desc">
+                <strong>Issued:</strong> August 2025<br>
+                <strong>Expires:</strong> Life Time</Time><br>
+                <strong>Credential ID:</strong> No ID
+            </p>
+        </div>
+    </div>
+
+    <div id="certificate-modal-2" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="images/certificates/certificate2.jpg" alt="Certificate 2" class="modal-img">
+            <h3 class="modal-title">Neural Networks and Deep Learning</h3>
+            <p class="modal-desc">
+                This certificate program provided hands-on experience in understanding the fundamentals of neural networks and building deep learning models. The program covered key concepts such as forward and backward propagation, activation functions, gradient descent, and the role of hidden layers in learning complex patterns.
+            </p>
+            <p class="modal-desc">
+                Key skills gained include implementing neural networks from scratch, understanding deep learning architectures, applying optimization algorithms, and improving model accuracy. The program also introduced practical applications of deep learning in real-world scenarios.
+            </p>
+            <p class="modal-desc">
+                <strong>Issued:</strong> August 2025<br>
+                <strong>Credential ID:</strong> No ID
+            </p>
+        </div>
+    </div>
+
+    <div id="certificate-modal-3" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="images/certificates/certificate3.jpg" alt="Certificate 3" class="modal-img">
+            <h3 class="modal-title">Strategy and Game Theory for Management</h3>
+            <p class="modal-desc">
+                This certificate demonstrates proficiency in applying strategic thinking and game theory principles to management and decision-making processes. The certification validates skills in analyzing competitive business scenarios, designing optimal strategies, and leveraging game-theoretic models for effective organizational planning.
+            </p>
+            <p class="modal-desc">
+                Key skills covered include strategic analysis, Nash equilibrium concepts, decision-making under uncertainty, negotiation tactics, competitive advantage frameworks, and practical applications of game theory in business and management.
+            </p>
+            <p class="modal-desc">
+                <strong>Issued:</strong> January 2025<br>
+                <strong>Credential ID:</strong> No ID
+            </p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
