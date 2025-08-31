@@ -244,7 +244,7 @@
         </div>
     </section>
 
-  <!-- Contact Section -->
+<!-- Contact Section -->
 <section id="contact" class="contact">
     <div class="container">
         <div class="section-title">
@@ -296,7 +296,7 @@
                         <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        <input type="text" class="form-control" name="contact" placeholder="Your Contact Details (Optional) - so that I can contact you">
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" name="subject" placeholder="Subject" required>
@@ -306,6 +306,10 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
+                <!-- Success message container -->
+                <div id="formSuccessMessage" style="display: none; margin-top: 20px; padding: 15px; background: rgba(20, 184, 166, 0.1); color: var(--accent-teal); border-radius: 8px; text-align: center; border: 1px solid var(--accent-teal);">
+                    <i class="fas fa-check-circle"></i> Your message is very important for me. We will look into your message as soon as possible. Thank you for messaging me.
+                </div>
             </div>
         </div>
     </div>
@@ -466,6 +470,7 @@
 </body>
 
 </html>
+
 
 
 
