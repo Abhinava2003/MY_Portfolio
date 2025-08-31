@@ -73,22 +73,63 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
     });
 });
 
-// Form Submission
+// Form Submission with Formspree
 document.getElementById('contactForm').addEventListener('submit', function(e) {
-    // Formspree will handle the submission, so we don't need to prevent default
-    // You can add additional validation here if needed
+    e.preventDefault();
     
-    // Optional: Show a temporary loading state
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Sending...';
-    submitBtn.disabled = true;
+    // Show confirmation dialog
+    const confirmed = confirm("Your message will be sent. Please click OK if you want to send the message.");
     
-    // Revert after 3 seconds (in case the form submission fails)
-    setTimeout(() => {
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-    }, 3000);
+    if (confirmed) {
+        // Show loading state
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+        
+        // Create a hidden iframe for form submission
+        const iframe = document.createElement('iframe');
+        iframe.name = 'formspree-iframe';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+        
+        // Set form target to the iframe
+        this.target = 'formspree-iframe';
+        
+        // Store the original form action
+        const originalAction = this.action;
+        
+        // Add a listener for the iframe load event
+        iframe.onload = function() {
+            // Show success message
+            document.getElementById('formSuccessMessage').style.display = 'block';
+            
+            // Reset the form
+            document.getElementById('contactForm').reset();
+            
+            // Revert button state
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+            
+            // Remove the iframe
+            setTimeout(() => {
+                document.body.removeChild(iframe);
+            }, 3000);
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                document.getElementById('formSuccessMessage').style.display = 'none';
+            }, 5000);
+        };
+        
+        // Submit the form
+        this.submit();
+        
+        // Reset form target and action after submission
+        setTimeout(() => {
+            this.target = '_self';
+        }, 1000);
+    }
 });
 
 // Download CV Button - FIXED VERSION
@@ -98,7 +139,7 @@ document.getElementById('downloadCV').addEventListener('click', function(e) {
     // Create a temporary anchor element
     const link = document.createElement('a');
     link.href = 'assets/resume.pdf';
-    link.download = 'YourName_Resume.pdf'; // You can customize the downloaded filename
+    link.download = 'Abhinava_Chakraborty_Resume.pdf';
     
     // Append to body, click, and remove
     document.body.appendChild(link);
@@ -147,4 +188,3 @@ window.addEventListener('click', (e) => {
         }
     });
 });
-
