@@ -908,3 +908,23 @@ footer {
         padding: 25px;
     }
 }
+/* Extra Mobile Optimization */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+}
